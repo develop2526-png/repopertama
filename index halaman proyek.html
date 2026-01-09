@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Konstruksi & Renovasi Surabaya - Bangun & Renovasi Bergaransi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #2563eb; /* Blue */
+            --accent: #f97316; /* Orange */
+            --dark: #0f172a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-grid-card {
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+
+        .service-grid-card:hover {
+            transform: translateY(-5px);
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .gradient-button {
+            background: linear-gradient(90deg, #f97316 0%, #ea580c 100%);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .gradient-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(234, 88, 12, 0.4);
+        }
+
+        .partner-logo {
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- 1. HERO SECTION -->
+    <header class="hero-bg min-h-screen flex items-center text-white px-6 pt-20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-blue-600/20 border border-blue-500/30 px-4 py-2 rounded-full text-blue-400 text-sm font-semibold">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Surabaya, Sidoarjo & Sekitarnya</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-800 leading-tight">
+                    Jasa Konstruksi & <span class="text-orange-500">Renovasi Rumah</span> Surabaya
+                </h1>
+                <p class="text-xl text-slate-300 font-light">
+                    Bangun Rumah dari Nol • Renovasi • Borongan & Harian
+                </p>
+                <p class="text-slate-400 max-w-lg leading-relaxed">
+                    Melayani berbagai kebutuhan bangunan rumah, kosan, ruko, hingga perbaikan kecil dengan hasil rapi, bergaransi, dan harga transparan.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4 text-sm font-semibold">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-check-circle text-orange-500"></i>
+                        <span>Bergaransi</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-check-circle text-orange-500"></i>
+                        <span>Free Survey & Konsultasi</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-check-circle text-orange-500"></i>
+                        <span>Amanah & Bertanggung Jawab</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-check-circle text-orange-500"></i>
+                        <span>Tenaga Berpengalaman</span>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <a href="https://wa.me/628123456789" class="gradient-button inline-flex items-center space-x-3 px-8 py-4 rounded-xl text-white font-bold text-lg">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>👉 Konsultasi Gratis via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hidden lg:block relative">
+                <div class="absolute -top-10 -left-10 w-32 h-32 bg-orange-500/20 rounded-full blur-3xl"></div>
+                <div class="bg-white/5 border border-white/10 p-4 rounded-3xl backdrop-blur-sm">
+                    <img src="https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80&w=1000" alt="Konstruksi Profesional" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl text-slate-900">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-orange-100 p-3 rounded-xl text-orange-600">
+                            <i class="fas fa-hard-hat text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs uppercase font-bold text-slate-400 tracking-wider">Project Selesai</div>
+                            <div class="text-2xl font-800">500+ Unit</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. SECTION: LAYANAN KAMI -->
+    <section id="layanan" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-800 text-slate-900 mb-4 uppercase">Layanan Kami</h2>
+            <div class="w-24 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
+            <p class="mt-6 text-slate-500 max-w-2xl mx-auto text-lg">Layanan terpadu untuk segala jenis kebutuhan properti Anda, mulai dari hunian hingga pergudangan.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Bangunan & Renovasi -->
+            <div class="service-grid-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">🏠 Bangunan & Renovasi</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li>• Bangun Rumah dari 0</li>
+                    <li>• Renovasi Rumah</li>
+                    <li>• Bangun Kosan / Kontrakan</li>
+                    <li>• Bangun Ruko / Warkop</li>
+                    <li>• Mezanine</li>
+                </ul>
+            </div>
+
+            <!-- Struktur & Konstruksi -->
+            <div class="service-grid-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">🧱 Struktur & Konstruksi</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li>• Pengecoran / Dak Beton Rumah</li>
+                    <li>• Pemasangan Porselen</li>
+                    <li>• Keramik Dinding & Lantai</li>
+                    <li>• Granit</li>
+                    <li>• Partisi</li>
+                </ul>
+            </div>
+
+            <!-- Besi & Custom -->
+            <div class="service-grid-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="w-14 h-14 bg-slate-100 text-slate-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">🏗️ Besi & Custom</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li>• Kanopi / Balkon</li>
+                    <li>• Pagar / Pintu / Tralis</li>
+                    <li>• Railing Tangga</li>
+                    <li>• Galvalum, Galvanis, Stainless</li>
+                    <li>• Container Booth</li>
+                </ul>
+            </div>
+
+            <!-- Interior & Finishing -->
+            <div class="service-grid-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">🛠️ Interior & Finishing</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li>• Kitchen Set</li>
+                    <li>• Meja & Kursi (Kayu, SS, Alum)</li>
+                    <li>• Backdrop & Interior</li>
+                    <li>• Finishing Bangunan</li>
+                    <li>• Plamir & Pengecatan</li>
+                </ul>
+            </div>
+
+            <!-- Atap & Plafon -->
+            <div class="service-grid-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                    <i class="fas fa-house-chimney"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">🏠 Atap & Plafon</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li>• Spandek, Alderon, Genteng</li>
+                    <li>• Solartuff, Seng, Asbes</li>
+                    <li>• Plafon Flat & Drop Ceiling</li>
+                    <li>• Gypsum, PVC, Kalsiboard</li>
+                </ul>
+            </div>
+
+            <!-- Instalasi & Elektronik -->
+            <div class="service-grid-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">🪛 Instalasi & Elektronik</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li>• Instalasi Listrik Baru</li>
+                    <li>• Pasang, Cuci & Servis AC</li>
+                    <li>• Servis Kulkas & Kipas Angin</li>
+                    <li>• Pemasangan Water Heater</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- HUBUNGAN KERJA SAMA & MATERIAL -->
+    <section class="bg-slate-900 py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-white text-3xl font-800 mb-6 uppercase">Terpercaya & Berpengalaman</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">Kami bangga telah menjalin kerja sama dengan grup besar dan perusahaan ternama. Kualitas adalah komitmen utama kami.</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 items-center mb-12">
+                        <span class="text-slate-500 font-bold text-lg hover:text-white transition-colors cursor-default">Luxury Group</span>
+                        <span class="text-slate-500 font-bold text-lg hover:text-white transition-colors cursor-default">Citraland Property</span>
+                        <span class="text-slate-500 font-bold text-lg hover:text-white transition-colors cursor-default">Waringin Hospitality</span>
+                    </div>
+
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-2xl">
+                        <h4 class="text-orange-500 font-bold mb-4">Jaminan Kualitas Material</h4>
+                        <p class="text-sm text-slate-300">Kami hanya menggunakan bahan bermutu terjamin dari brand ternama seperti:</p>
+                        <div class="flex flex-wrap gap-4 mt-4 text-xs font-bold uppercase tracking-wider text-slate-400">
+                            <span class="px-3 py-1 bg-white/10 rounded">Depo Bangunan</span>
+                            <span class="px-3 py-1 bg-white/10 rounded">Mitra10</span>
+                            <span class="px-3 py-1 bg-white/10 rounded">AJBS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-600 p-8 rounded-[2rem] text-white">
+                    <h3 class="text-2xl font-bold mb-6">Spesialis Renovasi Gedung Tinggi</h3>
+                    <p class="mb-6 opacity-90">Kami memiliki <strong>Tim Climbing</strong> bersertifikat untuk pengerjaan project di ketinggian (Apartemen & Hotel).</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-check"></i></div>
+                            <span>Apartemen & Hotel</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-check"></i></div>
+                            <span>Area Pergudangan</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-check"></i></div>
+                            <span>Exterior High-Rise Building</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECTION: SISTEM KERJA -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-800 text-slate-900 mb-4 uppercase">Sistem Kerja & Alur</h2>
+                <div class="w-24 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="flex justify-center space-x-6 mb-16">
+                <div class="bg-blue-100 text-blue-700 px-8 py-4 rounded-2xl font-bold flex items-center space-x-2">
+                    <i class="fas fa-box"></i>
+                    <span>Sistem Borongan</span>
+                </div>
+                <div class="bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-bold flex items-center space-x-2">
+                    <i class="fas fa-calendar-day"></i>
+                    <span>Sistem Harian</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold relative z-10">1</div>
+                    <h4 class="font-bold mb-2">Konsultasi WA</h4>
+                    <p class="text-xs text-slate-500">Kirim detail kebutuhan Anda secara singkat.</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold relative z-10">2</div>
+                    <h4 class="font-bold mb-2">Free Survey</h4>
+                    <p class="text-xs text-slate-500">Tim kami datang ke lokasi untuk cek kondisi.</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold relative z-10">3</div>
+                    <h4 class="font-bold mb-2">Penawaran</h4>
+                    <p class="text-xs text-slate-500">Harga transparan sesuai budget Anda.</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold relative z-10">4</div>
+                    <h4 class="font-bold mb-2">Pengerjaan</h4>
+                    <p class="text-xs text-slate-500">Proses kerja rapi dan tepat waktu.</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold relative z-10">5</div>
+                    <h4 class="font-bold mb-2">Garansi</h4>
+                    <p class="text-xs text-slate-500">Pekerjaan dijamin kuat dan tahan lama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECTION: KEUNGGULAN & 5. AREA -->
+    <section class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-800 mb-8 uppercase">Kenapa Memilih Kami?</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-star text-orange-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Bergaransi Pekerjaan</h4>
+                            <p class="text-sm text-slate-500">Kami bertanggung jawab penuh atas hasil kerja tim kami.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-star text-orange-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Amanah & Terpercaya</h4>
+                            <p class="text-sm text-slate-500">Kepercayaan klien adalah aset terbesar kami.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-star text-orange-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold">Material Sesuai Kesepakatan</h4>
+                            <p class="text-sm text-slate-500">Tidak ada pengurangan kualitas bahan tanpa sepengetahuan Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-10 rounded-3xl shadow-sm">
+                <h2 class="text-2xl font-800 mb-6 uppercase">📍 Area Layanan</h2>
+                <p class="text-slate-500 mb-6">Kantor & Tim kami siap menjangkau wilayah:</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-100 p-4 rounded-xl font-bold text-slate-700">Rungkut</div>
+                    <div class="bg-slate-100 p-4 rounded-xl font-bold text-slate-700">Wonokromo</div>
+                    <div class="bg-slate-100 p-4 rounded-xl font-bold text-slate-700">Surabaya Pusat</div>
+                    <div class="bg-slate-100 p-4 rounded-xl font-bold text-slate-700">Sidoarjo</div>
+                </div>
+                <p class="mt-8 text-sm italic text-slate-400">*Dan seluruh wilayah Jawa Timur untuk project besar/pergudangan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECTION: TESTIMONI -->
+    <section class="py-24 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-800 text-slate-900 mb-4">APA KATA MEREKA?</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="text-orange-500 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-slate-600 mb-6 text-sm">“Pekerjaan rapi, tepat waktu, dan sesuai kesepakatan. Tukangnya sopan dan komunikatif. Recommended banget!”</p>
+                    <div class="font-bold text-slate-900">— Bpk. Rudy, Surabaya</div>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="text-orange-500 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-slate-600 mb-6 text-sm">“Renovasi kantor gudang di Rungkut selesai lebih cepat dari jadwal. Harga transparan tidak ada biaya siluman.”</p>
+                    <div class="font-bold text-slate-900">— Ibu Shinta, Rungkut</div>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="text-orange-500 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-slate-600 mb-6 text-sm">“Pasang kanopi dan pagar rapi sekali las-lasannya. Finishing cat juga sangat halus. Mantap!”</p>
+                    <div class="font-bold text-slate-900">— Bpk. Agus, Wonokromo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SECTION: CTA PENUTUP -->
+    <section class="py-24 px-6 bg-blue-600">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-3xl md:text-5xl font-800 mb-6">Butuh Jasa Bangun atau Renovasi?</h2>
+            <p class="text-xl mb-10 opacity-90">Konsultasi GRATIS & Survey Lokasi Tanpa Biaya di Wilayah Surabaya.</p>
+            <a href="https://wa.me/628123456789" class="bg-white text-blue-600 px-10 py-5 rounded-2xl font-800 text-xl shadow-2xl hover:bg-slate-100 transition-all inline-flex items-center space-x-4">
+                <i class="fab fa-whatsapp text-3xl"></i>
+                <span>📲 Hubungi WhatsApp Sekarang</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="bg-blue-600 p-2 rounded-lg">
+                        <i class="fas fa-hard-hat text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-800 text-white tracking-tighter uppercase">SURABAYA<span class="text-orange-500">BUILD</span></span>
+                </div>
+                <p class="max-w-sm mb-6">Solusi konstruksi terbaik di Surabaya. Kami melayani dengan hati untuk mewujudkan hunian dan properti impian Anda dengan standar keamanan tinggi.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest">Layanan Utama</h4>
+                <ul class="space-y-3 text-sm">
+                    <li>Bangun Rumah & Kos</li>
+                    <li>Renovasi Apartemen/Hotel</li>
+                    <li>Konstruksi Pergudangan</li>
+                    <li>Pemasangan Atap & Kanopi</li>
+                    <li>Pengecatan & Finishing</li>
+                    <li>Servis AC & Listrik</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest">Kontak & Lokasi</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start space-x-3">
+                        <i class="fas fa-map-marker-alt text-orange-500 mt-1"></i>
+                        <span>Area Operasional: Rungkut, Wonokromo, Surabaya & Sidoarjo</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-phone text-orange-500"></i>
+                        <span>+62 812-3456-789</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fab fa-whatsapp text-green-500"></i>
+                        <span class="font-bold text-white">WA: [ISI NOMOR WA]</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto border-t border-white/5 mt-16 pt-8 text-center text-xs">
+            <p>&copy; 2024 SurabayaBuild Construction. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
